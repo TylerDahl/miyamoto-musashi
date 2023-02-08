@@ -241,13 +241,13 @@ if has('nvim')
 endif
 " }}}
 " Syntax: {{{
-call everforest#highlight('Boolean', s:palette.blue, s:palette.none)
+call everforest#highlight('Boolean', s:palette.purple, s:palette.none)
 call everforest#highlight('Number', s:palette.purple, s:palette.none)
 call everforest#highlight('Float', s:palette.purple, s:palette.none)
 if s:configuration.enable_italic
   call everforest#highlight('PreProc', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('PreCondit', s:palette.purple, s:palette.none, 'italic')
-  call everforest#highlight('Include', s:palette.blue, s:palette.none, 'italic')
+  call everforest#highlight('Include', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Define', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Conditional', s:palette.red, s:palette.none, 'italic')
   call everforest#highlight('Repeat', s:palette.red, s:palette.none, 'italic')
@@ -278,11 +278,11 @@ call everforest#highlight('Special', s:palette.yellow, s:palette.none)
 call everforest#highlight('SpecialChar', s:palette.yellow, s:palette.none)
 call everforest#highlight('Type', s:palette.yellow, s:palette.none)
 call everforest#highlight('Function', s:palette.green, s:palette.none)
-call everforest#highlight('String', s:palette.red, s:palette.none)
+call everforest#highlight('String', s:palette.green, s:palette.none)
 call everforest#highlight('Character', s:palette.green, s:palette.none)
 call everforest#highlight('Constant', s:palette.aqua, s:palette.none)
 call everforest#highlight('Macro', s:palette.aqua, s:palette.none)
-call everforest#highlight('Identifier', s:palette.blue, s:palette.none)
+call everforest#highlight('Identifier', s:palette.green, s:palette.none)
 if s:configuration.disable_italic_comment
   call everforest#highlight('Comment', s:palette.grey1, s:palette.none)
   call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none)
@@ -2224,7 +2224,7 @@ highlight! link purescriptType Aqua
 " syn_begin: c/cpp/objc/objcpp {{{
 " vim-cpp-enhanced-highlight: https://github.com/octol/vim-cpp-enhanced-highlight {{{
 highlight! link cppSTLnamespace Purple
-highlight! link cppSTLtype Blue
+highlight! link cppSTLtype Yellow
 highlight! link cppAccess PurpleItalic
 highlight! link cppStructure RedItalic
 highlight! link cppSTLios Aqua
