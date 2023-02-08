@@ -2226,7 +2226,7 @@ highlight! link purescriptType Aqua
 highlight! link cppSTLnamespace Purple
 highlight! link cppSTLtype Yellow
 highlight! link cppAccess PurpleItalic
-highlight! link cppStructure RedItalic
+highlight! link cppStructure Green
 highlight! link cppSTLios Aqua
 highlight! link cppSTLiterator PurpleItalic
 highlight! link cppSTLexception Purple
