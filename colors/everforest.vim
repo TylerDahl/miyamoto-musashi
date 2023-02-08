@@ -2224,7 +2224,7 @@ highlight! link purescriptType Aqua
 " syn_begin: c/cpp/objc/objcpp {{{
 " vim-cpp-enhanced-highlight: https://github.com/octol/vim-cpp-enhanced-highlight {{{
 highlight! link cppSTLnamespace Purple
-highlight! link cppSTLtype Yellow
+highlight! link cppSTLtype Blue
 highlight! link cppAccess PurpleItalic
 highlight! link cppStructure RedItalic
 highlight! link cppSTLios Aqua
