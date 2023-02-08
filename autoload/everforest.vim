@@ -130,12 +130,12 @@ function! everforest#get_palette(background, colors_override) "{{{
   if &background ==# 'dark' "{{{
     let palette2 = {
           \ 'fg':         ['#d3c6aa',   '223'],
-          \ 'red':        ['#e67e80',   '167'],
+          \ 'red':        ['#ff0000]',   '167'],
           \ 'orange':     ['#e69875',   '208'],
           \ 'yellow':     ['#dbbc7f',   '214'],
           \ 'green':      ['#a7c080',   '142'],
           \ 'aqua':       ['#83c092',   '108'],
-          \ 'blue':       ['#00ffff',   '109'],
+          \ 'blue':       ['#0000ff',   '109'],
           \ 'purple':     ['#d699b6',   '175'],
           \ 'grey0':      ['#7a8478',   '243'],
           \ 'grey1':      ['#859289',   '245'],
