@@ -1,8 +1,2 @@
 # Vim
-doc/tags
 after/syntax
-
-# Git Related
-.idea/
-.vscode/
-out/
