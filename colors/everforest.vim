@@ -282,7 +282,7 @@ call everforest#highlight('String', s:palette.green, s:palette.none)
 call everforest#highlight('Character', s:palette.green, s:palette.none)
 call everforest#highlight('Constant', s:palette.aqua, s:palette.none)
 call everforest#highlight('Macro', s:palette.aqua, s:palette.none)
-call everforest#highlight('Identifier', s:palette.green, s:palette.none)
+call everforest#highlight('Identifier', s:palette.blue, s:palette.none)
 if s:configuration.disable_italic_comment
   call everforest#highlight('Comment', s:palette.grey1, s:palette.none)
   call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none)
