@@ -284,12 +284,12 @@ call everforest#highlight('Constant', s:palette.aqua, s:palette.none)
 call everforest#highlight('Macro', s:palette.aqua, s:palette.none)
 call everforest#highlight('Identifier', s:palette.blue, s:palette.none)
 if s:configuration.disable_italic_comment
-  call everforest#highlight('Comment', s:palette.red, s:palette.none)
-  call everforest#highlight('SpecialComment', s:palette.red, s:palette.none)
+  call everforest#highlight('Comment', s:palette.grey1, s:palette.none)
+  call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none)
   call everforest#highlight('Todo', s:palette.purple, s:palette.none)
 else
-  call everforest#highlight('Comment', s:palette.red, s:palette.none, 'italic')
-  call everforest#highlight('SpecialComment', s:palette.red, s:palette.none, 'italic')
+  call everforest#highlight('Comment', s:palette.grey1, s:palette.none, 'italic')
+  call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none, 'italic')
   call everforest#highlight('Todo', s:palette.purple, s:palette.none, 'italic')
 endif
 call everforest#highlight('Delimiter', s:palette.fg, s:palette.none)
@@ -363,10 +363,10 @@ else
   highlight clear HintLine
 endif
 if s:configuration.diagnostic_virtual_text ==# 'grey'
-  highlight! link VirtualTextWarning Red
-  highlight! link VirtualTextError Red
-  highlight! link VirtualTextInfo Red
-  highlight! link VirtualTextHint Red
+  highlight! link VirtualTextWarning Grey
+  highlight! link VirtualTextError Grey
+  highlight! link VirtualTextInfo Grey
+  highlight! link VirtualTextHint Grey
 else
   highlight! link VirtualTextWarning Yellow
   highlight! link VirtualTextError Red
