@@ -363,7 +363,7 @@ else
   highlight clear HintLine
 endif
 if s:configuration.diagnostic_virtual_text ==# 'grey'
-  highlight! link VirtualTextWarning Grey
+  highlight! link VirtualTextWarning Red
   highlight! link VirtualTextError Grey
   highlight! link VirtualTextInfo Grey
   highlight! link VirtualTextHint Grey
