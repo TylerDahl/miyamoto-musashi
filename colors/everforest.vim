@@ -364,9 +364,9 @@ else
 endif
 if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextWarning Red
-  highlight! link VirtualTextError Grey
-  highlight! link VirtualTextInfo Grey
-  highlight! link VirtualTextHint Grey
+  highlight! link VirtualTextError Red
+  highlight! link VirtualTextInfo Red
+  highlight! link VirtualTextHint Red
 else
   highlight! link VirtualTextWarning Yellow
   highlight! link VirtualTextError Red
