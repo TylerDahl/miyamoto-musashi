@@ -478,8 +478,8 @@ highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
 highlight! link TSRepeat Purple
-highlight! link TSStorageClass Orange
-highlight! link TSStorageClassLifetime Orange
+highlight! link TSStorageClass Aqua
+highlight! link TSStorageClassLifetime Aqua
 highlight! link TSStrike Grey
 highlight! link TSString Red
 highlight! link TSStringEscape Green
