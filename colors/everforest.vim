@@ -459,9 +459,9 @@ highlight! link TSFunctionCall Fg
 highlight! link TSInclude Aqua
 highlight! link TSKeyword Aqua
 highlight! link TSKeywordFunction Aqua
-highlight! link TSKeywordOperator Orange
+highlight! link TSKeywordOperator Aqua
 highlight! link TSKeywordReturn Purple
-highlight! link TSLabel Orange
+highlight! link TSLabel Aqua
 highlight! link TSLiteral String
 highlight! link TSMath Blue
 highlight! link TSMethod Fg
@@ -486,7 +486,7 @@ highlight! link TSStringEscape Green
 highlight! link TSStringRegex Green
 highlight! link TSStringSpecial SpecialChar
 highlight! link TSSymbol Fg
-highlight! link TSTag Orange
+highlight! link TSTag Aqua
 highlight! link TSTagAttribute Green
 highlight! link TSTagDelimiter Green
 highlight! link TSText Green
