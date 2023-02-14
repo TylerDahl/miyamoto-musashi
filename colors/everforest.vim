@@ -458,7 +458,7 @@ highlight! link TSFunction Fg
 highlight! link TSFunctionCall Fg
 highlight! link TSInclude Aqua
 highlight! link TSKeyword Aqua
-highlight! link TSKeywordFunction Red
+highlight! link TSKeywordFunction Aqua
 highlight! link TSKeywordOperator Orange
 highlight! link TSKeywordReturn Purple
 highlight! link TSLabel Orange
@@ -477,7 +477,7 @@ highlight! link TSProperty Fg
 highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
-highlight! link TSRepeat Red
+highlight! link TSRepeat Aqua
 highlight! link TSStorageClass Orange
 highlight! link TSStorageClassLifetime Orange
 highlight! link TSStrike Grey
