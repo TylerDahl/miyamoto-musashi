@@ -454,9 +454,9 @@ highlight! link TSField Blue
 highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin Green
 highlight! link TSFuncMacro Green
-highlight! link TSFunction Green
+highlight! link TSFunction Blue
 highlight! link TSFunctionCall Green
-highlight! link TSInclude Green
+highlight! link TSInclude Aqua
 highlight! link TSKeyword Red
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
