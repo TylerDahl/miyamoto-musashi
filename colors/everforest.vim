@@ -439,7 +439,7 @@ highlight! link TSBoolean Purple
 highlight! link TSCharacter Aqua
 highlight! link TSCharacterSpecial SpecialChar
 highlight! link TSComment Comment
-highlight! link TSConditional Red
+highlight! link TSConditional Purple
 highlight! link TSConstBuiltin PurpleItalic
 highlight! link TSConstMacro PurpleItalic
 highlight! link TSConstant Fg
@@ -460,7 +460,7 @@ highlight! link TSInclude Aqua
 highlight! link TSKeyword Aqua
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
-highlight! link TSKeywordReturn Red
+highlight! link TSKeywordReturn Purple
 highlight! link TSLabel Orange
 highlight! link TSLiteral String
 highlight! link TSMath Blue
@@ -481,7 +481,7 @@ highlight! link TSRepeat Red
 highlight! link TSStorageClass Orange
 highlight! link TSStorageClassLifetime Orange
 highlight! link TSStrike Grey
-highlight! link TSString Aqua
+highlight! link TSString Red
 highlight! link TSStringEscape Green
 highlight! link TSStringRegex Green
 highlight! link TSStringSpecial SpecialChar
