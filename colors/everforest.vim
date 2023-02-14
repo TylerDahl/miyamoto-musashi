@@ -495,8 +495,8 @@ highlight! link TSTitle Title
 highlight! link TSTodo Todo
 highlight! link TSType YellowItalic
 highlight! link TSTypeBuiltin YellowItalic
-highlight! link TSTypeDefinition YellowItalic
-highlight! link TSTypeQualifier Orange
+highlight! link TSTypeDefinition Aqua
+highlight! link TSTypeQualifier Aqua
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin PurpleItalic
