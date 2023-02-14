@@ -455,9 +455,9 @@ highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin Green
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Fg
-highlight! link TSFunctionCall Green
+highlight! link TSFunctionCall Fg
 highlight! link TSInclude Aqua
-highlight! link TSKeyword Red
+highlight! link TSKeyword Aqua
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
 highlight! link TSKeywordReturn Red
@@ -468,8 +468,8 @@ highlight! link TSMethod Green
 highlight! link TSMethodCall Green
 highlight! link TSNamespace YellowItalic
 highlight! link TSNone Fg
-highlight! link TSNumber Purple
-highlight! link TSOperator Orange
+highlight! link TSNumber Orange
+highlight! link TSOperator Fg
 highlight! link TSParameter Fg
 highlight! link TSParameterReference Fg
 highlight! link TSPreProc PreProc
