@@ -477,7 +477,7 @@ highlight! link TSProperty Fg
 highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Blue
-highlight! link TSRepeat Aqua
+highlight! link TSRepeat Purple
 highlight! link TSStorageClass Orange
 highlight! link TSStorageClassLifetime Orange
 highlight! link TSStrike Grey
