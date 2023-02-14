@@ -494,7 +494,7 @@ highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
 highlight! link TSType YellowItalic
-highlight! link TSTypeBuiltin Fg
+highlight! link TSTypeBuiltin Aqua
 highlight! link TSTypeDefinition Aqua
 highlight! link TSTypeQualifier Aqua
 highlight! link TSURI markdownUrl
