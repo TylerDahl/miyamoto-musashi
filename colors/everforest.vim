@@ -466,11 +466,11 @@ highlight! link TSLiteral String
 highlight! link TSMath Blue
 highlight! link TSMethod Fg
 highlight! link TSMethodCall Fg
-highlight! link TSNamespace YellowItalic
+highlight! link TSNamespace Fg
 highlight! link TSNone Fg
 highlight! link TSNumber Orange
-highlight! link TSOperator Fg
-highlight! link TSParameter Fg
+highlight! link TSOperator Fg		" operator
+highlight! link TSParameter Fg		" function parameter
 highlight! link TSParameterReference Fg
 highlight! link TSPreProc PreProc
 highlight! link TSProperty Fg
@@ -493,8 +493,8 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType YellowItalic
-highlight! link TSTypeBuiltin Aqua
+highlight! link TSType Aqua
+highlight! link TSTypeBuiltin Aqua		" builtin data type
 highlight! link TSTypeDefinition Aqua
 highlight! link TSTypeQualifier Aqua
 highlight! link TSURI markdownUrl
