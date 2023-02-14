@@ -493,7 +493,7 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType Aqua
+highlight! link TSType Aqua		" typedef name
 highlight! link TSTypeBuiltin Aqua		" builtin data type
 highlight! link TSTypeDefinition Aqua
 highlight! link TSTypeQualifier Aqua
