@@ -456,7 +456,7 @@ highlight! link TSFuncBuiltin Green
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
 highlight! link TSFunctionCall Green
-highlight! link TSInclude Red
+highlight! link TSInclude Green
 highlight! link TSKeyword Red
 highlight! link TSKeywordFunction Red
 highlight! link TSKeywordOperator Orange
