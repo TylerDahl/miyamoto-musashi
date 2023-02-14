@@ -137,7 +137,7 @@ function! everforest#get_palette(background, colors_override) "{{{
           \ 'aqua':       ['#83c092',   '108'],
           \ 'blue':       ['#7fbbb3',   '109'],
           \ 'purple':     ['#f5e1e3',   '175'],
-          \ 'grey0':      ['#7a8478',   '243'],
+          \ 'grey0':      ['#009d00',   '243'],
           \ 'grey1':      ['#859289',   '245'],
           \ 'grey2':      ['#9da9a0',   '247'],
           \ 'statusline1':['#a7c080',   '142'],
