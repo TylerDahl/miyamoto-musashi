@@ -131,7 +131,7 @@ function! everforest#get_palette(background, colors_override) "{{{
     let palette2 = {
           \ 'fg':         ['#b4ad92',   '223'],
           \ 'red':        ['#f59d85',   '167'],
-          \ 'orange':     ['#e69875',   '208'],
+          \ 'orange':     ['#c7e39b',   '208'],
           \ 'yellow':     ['#dbbc7f',   '214'],
           \ 'green':      ['#c7e39b',   '142'],
           \ 'aqua':       ['#83c092',   '108'],

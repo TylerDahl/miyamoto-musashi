@@ -475,7 +475,7 @@ highlight! link TSParameterReference Fg
 highlight! link TSPreProc PreProc
 highlight! link TSProperty Fg
 highlight! link TSPunctBracket Fg
-highlight! link TSPunctDelimiter Fg
+highlight! link TSPunctDelimiter Fg		" semi-colon
 highlight! link TSPunctSpecial Blue
 highlight! link TSRepeat Purple
 highlight! link TSStorageClass Aqua
