@@ -452,7 +452,7 @@ highlight! link TSError Error
 highlight! link TSException Red
 highlight! link TSField Fg
 highlight! link TSFloat Orange
-highlight! link TSFuncBuiltin Fg
+highlight! link TSFuncBuiltin Blue
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Fg
 highlight! link TSFunctionCall Fg
@@ -493,7 +493,7 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType Aqua		" typedef name
+highlight! link TSType Aqua		" typedef definition
 highlight! link TSTypeBuiltin Aqua		" builtin data type
 highlight! link TSTypeDefinition Aqua
 highlight! link TSTypeQualifier Aqua
