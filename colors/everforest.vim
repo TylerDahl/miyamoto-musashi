@@ -252,7 +252,7 @@ if s:configuration.enable_italic
   call everforest#highlight('Conditional', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Repeat', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Keyword', s:palette.purple, s:palette.none, 'italic')
-  call everforest#highlight('Typedef', s:palette.red, s:palette.none, 'italic')
+  call everforest#highlight('Typedef', s:palette.yellow, s:palette.none, 'italic')
   call everforest#highlight('Exception', s:palette.red, s:palette.none, 'italic')
   call everforest#highlight('Statement', s:palette.purple, s:palette.none, 'italic')
 else
@@ -263,7 +263,7 @@ else
   call everforest#highlight('Conditional', s:palette.purple, s:palette.none)
   call everforest#highlight('Repeat', s:palette.purple, s:palette.none)
   call everforest#highlight('Keyword', s:palette.purple, s:palette.none)
-  call everforest#highlight('Typedef', s:palette.red, s:palette.none)
+  call everforest#highlight('Typedef', s:palette.yellow, s:palette.none)
   call everforest#highlight('Exception', s:palette.red, s:palette.none)
   call everforest#highlight('Statement', s:palette.purple, s:palette.none)
 endif
@@ -454,7 +454,7 @@ highlight! link TSField Fg
 highlight! link TSFloat Orange
 highlight! link TSFuncBuiltin Purple
 highlight! link TSFuncMacro Green
-highlight! link TSFunction Yellow
+highlight! link TSFunction Fg	" function definition and call
 highlight! link TSFunctionCall Fg
 highlight! link TSInclude Aqua
 highlight! link TSKeyword Aqua
