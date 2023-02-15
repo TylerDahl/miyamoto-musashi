@@ -442,7 +442,7 @@ highlight! link TSComment Comment
 highlight! link TSConditional Purple
 highlight! link TSConstBuiltin PurpleItalic
 highlight! link TSConstMacro PurpleItalic
-highlight! link TSConstant Fg
+highlight! link TSConstant Blue
 highlight! link TSConstructor Fg
 highlight! link TSDebug Debug
 highlight! link TSDefine Define
