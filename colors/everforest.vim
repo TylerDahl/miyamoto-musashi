@@ -452,7 +452,7 @@ highlight! link TSError Error
 highlight! link TSException Red
 highlight! link TSField Fg
 highlight! link TSFloat Orange
-highlight! link TSFuncBuiltin Blue
+highlight! link TSFuncBuiltin Purple
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Fg
 highlight! link TSFunctionCall Fg
