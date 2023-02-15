@@ -284,13 +284,13 @@ call everforest#highlight('Constant', s:palette.blue, s:palette.none)
 call everforest#highlight('Macro', s:palette.blue, s:palette.none)
 call everforest#highlight('Identifier', s:palette.blue, s:palette.none)
 if s:configuration.disable_italic_comment
-  call everforest#highlight('Comment', s:palette.grey1, s:palette.none)
-  call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none)
-  call everforest#highlight('Todo', s:palette.purple, s:palette.none)
+  call everforest#highlight('Comment', s:palette.green, s:palette.none)		" comment
+  call everforest#highlight('SpecialComment', s:palette.green, s:palette.none)		" comment
+  call everforest#highlight('Todo', s:palette.yellow, s:palette.none)" comment
 else
-  call everforest#highlight('Comment', s:palette.grey1, s:palette.none, 'italic')
-  call everforest#highlight('SpecialComment', s:palette.grey1, s:palette.none, 'italic')
-  call everforest#highlight('Todo', s:palette.purple, s:palette.none, 'italic')
+  call everforest#highlight('Comment', s:palette.green, s:palette.none, 'italic')	" comment
+  call everforest#highlight('SpecialComment', s:palette.green, s:palette.none, 'italic')	" comment
+  call everforest#highlight('Todo', s:palette.yellow, s:palette.none, 'italic')		" comment
 endif
 call everforest#highlight('Delimiter', s:palette.fg, s:palette.none)
 call everforest#highlight('Ignore', s:palette.grey1, s:palette.none)
