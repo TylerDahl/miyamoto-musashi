@@ -298,7 +298,7 @@ call everforest#highlight('Underlined', s:palette.none, s:palette.none, 'underli
 " }}}
 " Predefined Highlight Groups: {{{
 call everforest#highlight('Fg', s:palette.fg, s:palette.none)
-call everforest#highlight('Grey', s:palette.red, s:palette.none)
+call everforest#highlight('Grey', s:palette.grey1, s:palette.none)
 call everforest#highlight('Red', s:palette.red, s:palette.none)
 call everforest#highlight('Orange', s:palette.orange, s:palette.none)
 call everforest#highlight('Yellow', s:palette.yellow, s:palette.none)
@@ -828,12 +828,12 @@ let g:fzf_colors = {
       \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
       \ 'hl+':     ['fg', 'Aqua'],
       \ 'info':    ['fg', 'Aqua'],
-      \ 'border':  ['fg', 'Grey'],
+      \ 'border':  ['fg', 'fg'],
       \ 'prompt':  ['fg', 'Orange'],
       \ 'pointer': ['fg', 'Blue'],
       \ 'marker':  ['fg', 'Yellow'],
       \ 'spinner': ['fg', 'Yellow'],
-      \ 'header':  ['fg', 'Grey']
+      \ 'header':  ['fg', 'fg']
       \ }
 " }}}
 " Shougo/denite.nvim {{{
@@ -1060,7 +1060,7 @@ highlight! link TroubleCode Grey
 " }}}
 " nvim-telescope/telescope.nvim {{{
 call everforest#highlight('TelescopeMatching', s:palette.green, s:palette.none, 'bold')
-highlight! link TelescopeBorder Grey
+highlight! link TelescopeBorder Fg
 highlight! link TelescopePromptPrefix Orange
 highlight! link TelescopeSelection DiffAdd
 " }}}
@@ -1182,9 +1182,9 @@ highlight! link LspSagaAutoPreview Green
 highlight! link LspSagaFinderSelection Fg
 highlight! link DiagnosticWarning DiagnosticWarn
 highlight! link DiagnosticInformation DiagnosticInfo
-highlight! link ReferencesCount Grey
-highlight! link DefinitionCount Grey
-highlight! link TargetFileName Grey
+highlight! link ReferencesCount Fg
+highlight! link DefinitionCount Fg
+highlight! link TargetFileName Fg
 " }}}
 " b0o/incline.nvim {{{
 call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
@@ -1193,8 +1193,8 @@ call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 call everforest#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine')
 call everforest#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
 call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
-call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.bg1)
-call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.bg1)
+call everforest#highlight('MiniStatuslineDevinfo', s:palette.red, s:palette.bg1)
+call everforest#highlight('MiniStatuslineFileinfo', s:palette.red, s:palette.bg1)
 call everforest#highlight('MiniStatuslineModeCommand', s:palette.bg0, s:palette.aqua, 'bold')
 call everforest#highlight('MiniStatuslineModeInsert', s:palette.bg0, s:palette.statusline2, 'bold')
 call everforest#highlight('MiniStatuslineModeNormal', s:palette.bg0, s:palette.statusline1, 'bold')
@@ -1202,9 +1202,9 @@ call everforest#highlight('MiniStatuslineModeOther', s:palette.bg0, s:palette.pu
 call everforest#highlight('MiniStatuslineModeReplace', s:palette.bg0, s:palette.orange, 'bold')
 call everforest#highlight('MiniStatuslineModeVisual', s:palette.bg0, s:palette.statusline3, 'bold')
 call everforest#highlight('MiniTablineCurrent', s:palette.fg, s:palette.bg4)
-call everforest#highlight('MiniTablineHidden', s:palette.grey1, s:palette.bg2)
+call everforest#highlight('MiniTablineHidden', s:palette.red, s:palette.bg2)
 call everforest#highlight('MiniTablineModifiedCurrent', s:palette.blue, s:palette.bg4)
-call everforest#highlight('MiniTablineModifiedHidden', s:palette.grey1, s:palette.bg2)
+call everforest#highlight('MiniTablineModifiedHidden', s:palette.red, s:palette.bg2)
 call everforest#highlight('MiniTablineModifiedVisible', s:palette.blue, s:palette.bg2)
 call everforest#highlight('MiniTablineTabpagesection', s:palette.bg0, s:palette.statusline1, 'bold')
 call everforest#highlight('MiniTablineVisible', s:palette.fg, s:palette.bg2)
