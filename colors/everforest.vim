@@ -166,7 +166,7 @@ if s:configuration.transparent_background == 2
 else
   call everforest#highlight('StatusLine', s:palette.red, s:palette.bg2)
   call everforest#highlight('StatusLineTerm', s:palette.red, s:palette.bg1)
-  call everforest#highlight('StatusLineNC', s:palette., s:palette.bg1)
+  call everforest#highlight('StatusLineNC', s:palette.red, s:palette.bg1)
   call everforest#highlight('StatusLineTermNC', s:palette.red, s:palette.bg0)
   call everforest#highlight('TabLine', s:palette.red, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.red, s:palette.bg1)
