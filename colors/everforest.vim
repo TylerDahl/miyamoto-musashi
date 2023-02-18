@@ -98,10 +98,10 @@ highlight! link iCursor Cursor
 highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
 if &diff
-  call everforest#highlight('CursorLine', s:palette.none, s:palette.none, 'underline')
+  call everforest#highlight('CursorLine', s:palette.red, s:palette.none, 'underline')
   call everforest#highlight('CursorColumn', s:palette.none, s:palette.none, 'bold')
 else
-  call everforest#highlight('CursorLine', s:palette.none, s:palette.bg1)
+  call everforest#highlight('CursorLine', s:palette.red, s:palette.bg1)
   call everforest#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 endif
 if s:configuration.ui_contrast ==# 'low'
@@ -252,7 +252,7 @@ if s:configuration.enable_italic
   call everforest#highlight('Conditional', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Repeat', s:palette.purple, s:palette.none, 'italic')
   call everforest#highlight('Keyword', s:palette.purple, s:palette.none, 'italic')
-  call everforest#highlight('Typedef', s:palette.yellow, s:palette.none, 'italic')
+  call everforest#highlight('Typedef', s:palette.red, s:palette.none, 'italic')
   call everforest#highlight('Exception', s:palette.red, s:palette.none, 'italic')
   call everforest#highlight('Statement', s:palette.purple, s:palette.none, 'italic')
 else
@@ -263,7 +263,7 @@ else
   call everforest#highlight('Conditional', s:palette.purple, s:palette.none)
   call everforest#highlight('Repeat', s:palette.purple, s:palette.none)
   call everforest#highlight('Keyword', s:palette.purple, s:palette.none)
-  call everforest#highlight('Typedef', s:palette.yellow, s:palette.none)
+  call everforest#highlight('Typedef', s:palette.red, s:palette.none)
   call everforest#highlight('Exception', s:palette.red, s:palette.none)
   call everforest#highlight('Statement', s:palette.purple, s:palette.none)
 endif
