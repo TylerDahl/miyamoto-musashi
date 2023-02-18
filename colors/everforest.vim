@@ -66,11 +66,11 @@ else
       call everforest#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
     endif
   endif
-  call everforest#highlight('Folded', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('Folded', s:palette.grey1, s:palette.red)
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
   if s:configuration.sign_column_background ==# 'grey'
-    call everforest#highlight('SignColumn', s:palette.fg, s:palette.bg1)
-    call everforest#highlight('FoldColumn', s:palette.red, s:palette.bg1)
+    call everforest#highlight('SignColumn', s:palette.fg, s:palette.red)
+    call everforest#highlight('FoldColumn', s:palette.grey2, s:palette.red)
   else
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
     if s:configuration.ui_contrast ==# 'low'
@@ -82,7 +82,7 @@ else
 endif
 call everforest#highlight('IncSearch', s:palette.bg0, s:palette.red)
 call everforest#highlight('Search', s:palette.bg0, s:palette.green)
-call everforest#highlight('ColorColumn', s:palette.none, s:palette.bg1)
+call everforest#highlight('ColorColumn', s:palette.none, s:palette.red)
 if s:configuration.ui_contrast ==# 'low'
   call everforest#highlight('Conceal', s:palette.bg5, s:palette.none)
 else
@@ -101,8 +101,8 @@ if &diff
   call everforest#highlight('CursorLine', s:palette.none, s:palette.none, 'underline')
   call everforest#highlight('CursorColumn', s:palette.none, s:palette.none, 'bold')
 else
-  call everforest#highlight('CursorLine', s:palette.none, s:palette.bg1)
-  call everforest#highlight('CursorColumn', s:palette.none, s:palette.bg1)
+  call everforest#highlight('CursorLine', s:palette.none, s:palette.red)
+  call everforest#highlight('CursorColumn', s:palette.none, s:palette.red)
 endif
 if s:configuration.ui_contrast ==# 'low'
   call everforest#highlight('LineNr', s:palette.bg5, s:palette.none)
@@ -111,16 +111,16 @@ if s:configuration.ui_contrast ==# 'low'
   elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background ==# 'none'
     call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none)
   else
-    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1)
+    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.red)
   endif
 else
   call everforest#highlight('LineNr', s:palette.grey0, s:palette.none)
   if &diff
-    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.none, 'underline')
+    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
   elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background ==# 'none'
-    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.none)
+    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
   else
-    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.bg1)
+    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.red)
   endif
 endif
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
@@ -160,16 +160,16 @@ if s:configuration.transparent_background == 2
   call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.none)
   call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.none)
   call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.none)
-  call everforest#highlight('TabLine', s:palette.red, s:palette.bg3)
+  call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.none)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 else
   call everforest#highlight('StatusLine', s:palette.grey1, s:palette.bg2)
-  call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
-  call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.red)
+  call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.red)
   call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
-  call everforest#highlight('TabLine', s:palette.red, s:palette.bg3)
-  call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
+  call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.red)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 endif
 if s:configuration.dim_inactive_windows
@@ -332,13 +332,13 @@ if s:configuration.transparent_background || s:configuration.sign_column_backgro
   call everforest#highlight('BlueSign', s:palette.blue, s:palette.none)
   call everforest#highlight('PurpleSign', s:palette.purple, s:palette.none)
 else
-  call everforest#highlight('RedSign', s:palette.red, s:palette.bg1)
-  call everforest#highlight('OrangeSign', s:palette.orange, s:palette.bg1)
-  call everforest#highlight('YellowSign', s:palette.yellow, s:palette.bg1)
-  call everforest#highlight('GreenSign', s:palette.green, s:palette.bg1)
-  call everforest#highlight('AquaSign', s:palette.aqua, s:palette.bg1)
-  call everforest#highlight('BlueSign', s:palette.blue, s:palette.bg1)
-  call everforest#highlight('PurpleSign', s:palette.purple, s:palette.bg1)
+  call everforest#highlight('RedSign', s:palette.red, s:palette.red)
+  call everforest#highlight('OrangeSign', s:palette.orange, s:palette.red)
+  call everforest#highlight('YellowSign', s:palette.yellow, s:palette.red)
+  call everforest#highlight('GreenSign', s:palette.green, s:palette.red)
+  call everforest#highlight('AquaSign', s:palette.aqua, s:palette.red)
+  call everforest#highlight('BlueSign', s:palette.blue, s:palette.red)
+  call everforest#highlight('PurpleSign', s:palette.purple, s:palette.red)
 endif
 if s:configuration.diagnostic_text_highlight
   call everforest#highlight('ErrorText', s:palette.none, s:palette.bg_red, 'undercurl', s:palette.red)
@@ -786,7 +786,7 @@ highlight! link Lf_hl_popup_spin Red
 " }}}
 " liuchengxu/vim-clap {{{
 call everforest#highlight('ClapSelected', s:palette.red, s:palette.none, 'bold')
-call everforest#highlight('ClapCurrentSelection', s:palette.none, s:palette.bg1, 'bold')
+call everforest#highlight('ClapCurrentSelection', s:palette.none, s:palette.red, 'bold')
 call everforest#highlight('ClapSpinner', s:palette.orange, s:palette.bg2, 'bold')
 call everforest#highlight('ClapBlines', s:palette.fg, s:palette.none)
 call everforest#highlight('ClapProviderId', s:palette.fg, s:palette.none, 'bold')
@@ -931,7 +931,7 @@ endif
 " }}}
 " nathanaelkane/vim-indent-guides {{{
 if get(g:, 'indent_guides_auto_colors', 1) == 0
-  call everforest#highlight('IndentGuidesOdd', s:palette.bg0, s:palette.bg1)
+  call everforest#highlight('IndentGuidesOdd', s:palette.bg0, s:palette.red)
   call everforest#highlight('IndentGuidesEven', s:palette.bg0, s:palette.bg2)
 endif
 " }}}
@@ -1193,8 +1193,8 @@ call everforest#highlight('InclineNormalNC', s:palette.grey1, s:palette.bg2)
 call everforest#highlight('MiniIndentscopePrefix', s:palette.none, s:palette.none, 'nocombine')
 call everforest#highlight('MiniJump2dSpot', s:palette.orange, s:palette.none, 'bold,nocombine')
 call everforest#highlight('MiniStarterCurrent', s:palette.none, s:palette.none, 'nocombine')
-call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.bg1)
-call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.bg1)
+call everforest#highlight('MiniStatuslineDevinfo', s:palette.grey1, s:palette.red)
+call everforest#highlight('MiniStatuslineFileinfo', s:palette.grey1, s:palette.red)
 call everforest#highlight('MiniStatuslineModeCommand', s:palette.bg0, s:palette.aqua, 'bold')
 call everforest#highlight('MiniStatuslineModeInsert', s:palette.bg0, s:palette.statusline2, 'bold')
 call everforest#highlight('MiniStatuslineModeNormal', s:palette.bg0, s:palette.statusline1, 'bold')
