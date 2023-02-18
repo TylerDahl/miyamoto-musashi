@@ -70,7 +70,7 @@ else
   call everforest#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
   if s:configuration.sign_column_background ==# 'grey'
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.bg1)
-    call everforest#highlight('FoldColumn', s:palette.grey2, s:palette.bg1)
+    call everforest#highlight('FoldColumn', s:palette.red, s:palette.bg1)
   else
     call everforest#highlight('SignColumn', s:palette.fg, s:palette.none)
     if s:configuration.ui_contrast ==# 'low'
@@ -116,11 +116,11 @@ if s:configuration.ui_contrast ==# 'low'
 else
   call everforest#highlight('LineNr', s:palette.grey0, s:palette.none)
   if &diff
-    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none, 'underline')
+    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.none, 'underline')
   elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background ==# 'none'
-    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
+    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.none)
   else
-    call everforest#highlight('CursorLineNr', s:palette.grey2, s:palette.bg1)
+    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.bg1)
   endif
 endif
 call everforest#highlight('DiffAdd', s:palette.none, s:palette.bg_green)
@@ -160,7 +160,7 @@ if s:configuration.transparent_background == 2
   call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.none)
   call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.none)
   call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.none)
-  call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
+  call everforest#highlight('TabLine', s:palette.red, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.none)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 else
@@ -168,7 +168,7 @@ else
   call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
-  call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
+  call everforest#highlight('TabLine', s:palette.red, s:palette.bg3)
   call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 endif
