@@ -107,11 +107,11 @@ endif
 if s:configuration.ui_contrast ==# 'low'
   call everforest#highlight('LineNr', s:palette.bg5, s:palette.none)
   if &diff
-    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.none, 'underline')
+    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none, 'underline')
   elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background ==# 'none'
-    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.none)
+    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.none)
   else
-    call everforest#highlight('CursorLineNr', s:palette.red, s:palette.bg1)
+    call everforest#highlight('CursorLineNr', s:palette.grey1, s:palette.bg1)
   endif
 else
   call everforest#highlight('LineNr', s:palette.grey0, s:palette.none)
@@ -142,7 +142,7 @@ call everforest#highlight('PmenuSel', s:palette.bg0, s:palette.statusline1)
 highlight! link WildMenu PmenuSel
 call everforest#highlight('PmenuThumb', s:palette.none, s:palette.grey0)
 call everforest#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
-call everforest#highlight('FloatBorder', s:palette.grey1, s:palette.bg2)
+call everforest#highlight('FloatBorder', s:palette.red, s:palette.bg2)
 call everforest#highlight('Question', s:palette.yellow, s:palette.none)
 if s:configuration.spell_foreground ==# 'none'
   call everforest#highlight('SpellBad', s:palette.none, s:palette.none, 'undercurl', s:palette.red)
@@ -156,20 +156,20 @@ else
   call everforest#highlight('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
 endif
 if s:configuration.transparent_background == 2
-  call everforest#highlight('StatusLine', s:palette.grey1, s:palette.none)
-  call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.none)
-  call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.none)
-  call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.none)
+  call everforest#highlight('StatusLine', s:palette.red, s:palette.none)
+  call everforest#highlight('StatusLineTerm', s:palette.red, s:palette.none)
+  call everforest#highlight('StatusLineNC', s:palette.red, s:palette.none)
+  call everforest#highlight('StatusLineTermNC', s:palette.red, s:palette.none)
   call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
-  call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.none)
+  call everforest#highlight('TabLineFill', s:palette.red, s:palette.none)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 else
-  call everforest#highlight('StatusLine', s:palette.grey1, s:palette.bg2)
-  call everforest#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
-  call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.bg1)
-  call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
+  call everforest#highlight('StatusLine', s:palette.red, s:palette.bg2)
+  call everforest#highlight('StatusLineTerm', s:palette.red, s:palette.bg1)
+  call everforest#highlight('StatusLineNC', s:palette.red, s:palette.bg1)
+  call everforest#highlight('StatusLineTermNC', s:palette.red, s:palette.bg0)
   call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
-  call everforest#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
+  call everforest#highlight('TabLineFill', s:palette.red, s:palette.bg1)
   call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 endif
 if s:configuration.dim_inactive_windows
