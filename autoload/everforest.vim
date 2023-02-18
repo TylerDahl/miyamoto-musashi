@@ -143,7 +143,6 @@ function! everforest#get_palette(background, colors_override) "{{{
           \ 'statusline1':['#a7c080',   '142'],
           \ 'statusline2':['#d3c6aa',   '223'],
           \ 'statusline3':['#e67e80',   '167'],
-          \ 'tyler':['#0000ff',   '167'],
           \ 'none':       ['NONE',      'NONE']
           \ } "}}}
   else "{{{
