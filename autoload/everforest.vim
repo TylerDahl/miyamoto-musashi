@@ -141,6 +141,7 @@ function! everforest#get_palette(background, colors_override) "{{{
           \ 'grey1':      ['#859289',   '245'],
           \ 'grey2':      ['#9da9a0',   '247'],
           \ 'tyler':      ['#2e2e2e',   '247'],
+          \ 'commentgreen':      ['#00ff00',   '247'],
           \ 'statusline1':['#a7c080',   '142'],
           \ 'statusline2':['#d3c6aa',   '223'],
           \ 'statusline3':['#e67e80',   '167'],
