@@ -11,7 +11,7 @@ function! everforest#get_configuration() "{{{
         \ 'background': get(g:, 'everforest_background', 'medium'),
         \ 'transparent_background': get(g:, 'everforest_transparent_background', 0),
         \ 'dim_inactive_windows': get(g:, 'everforest_dim_inactive_windows', 0),
-        \ 'disable_italic_comment': get(g:, 'everforest_disable_italic_comment', 0),
+        \ 'disable_italic_comment': get(g:, 'everforest_disable_italic_comment', 1),
         \ 'enable_italic': get(g:, 'everforest_enable_italic', 0),
         \ 'cursor': get(g:, 'everforest_cursor', 'auto'),
         \ 'menu_selection_background': get(g:, 'everforest_menu_selection_background', 'white'),
