@@ -1468,10 +1468,10 @@ highlight! link DirvishArg Yellow
 " syn_begin: NvimTree {{{
 " https://github.com/kyazdani42/nvim-tree.lua
 if !s:configuration.transparent_background
-  call everforest#highlight('NvimTreeNormal', s:palette.fg, s:palette.bg_dim)
+  call everforest#highlight('NvimTreeNormal', s:palette.fg, s:palette.bg0)
   call everforest#highlight('NvimTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
   call everforest#highlight('NvimTreeVertSplit', s:palette.bg0, s:palette.bg0)
-  call everforest#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
+  call everforest#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg_green)
 endif
 highlight! link NvimTreeSymlink Fg
 highlight! link NvimTreeFolderName Green
