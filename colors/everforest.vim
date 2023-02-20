@@ -285,11 +285,11 @@ call everforest#highlight('Macro', s:palette.blue, s:palette.none)
 call everforest#highlight('Identifier', s:palette.blue, s:palette.none)
 if s:configuration.disable_italic_comment
   call everforest#highlight('Comment', s:palette.commentgreen, s:palette.none)		" comment
-  call everforest#highlight('SpecialComment', s:palette.commentgreen, s:palette.none)		" comment
+  call everforest#highlight('SpecialComment', s:palette.grey0, s:palette.none)		" comment
   call everforest#highlight('Todo', s:palette.commentgreen, s:palette.none)" comment
 else
   call everforest#highlight('Comment', s:palette.commentgreen, s:palette.none, 'italic')	" comment
-  call everforest#highlight('SpecialComment', s:palette.commentgreen, s:palette.none, 'italic')	" comment
+  call everforest#highlight('SpecialComment', s:palette.grey0, s:palette.none, 'italic')	" comment
   call everforest#highlight('Todo', s:palette.commentgreen, s:palette.none, 'italic')		" comment
 endif
 call everforest#highlight('Delimiter', s:palette.fg, s:palette.none)
