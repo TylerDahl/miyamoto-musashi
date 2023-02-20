@@ -449,7 +449,7 @@ highlight! link TSDefine Define
 highlight! link TSEnvironment Macro
 highlight! link TSEnvironmentName Type
 highlight! link TSError Error
-highlight! link TSException Red
+highlight! link TSException Purple
 highlight! link TSField Fg
 highlight! link TSFloat Orange
 highlight! link TSFuncBuiltin Purple
